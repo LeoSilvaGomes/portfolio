@@ -2,12 +2,17 @@ import React from 'react'
 
 import { Container, Graph, Level } from './styles'
 
-export default function Skill() {
+interface PropSkill {
+  name: string,
+  level: string
+}
+
+export default function Skill({name, level} : PropSkill) {
   return(
     <Container>
-      <h2>Git</h2>
-      <Graph />
-      <Level>Avançado</Level>
+      <h2>{name}</h2>
+      <Graph level={level}/>
+      <Level>{level}</Level>
     </Container>
   )
 }
