@@ -42,14 +42,6 @@ export const Skills = styled.div<Content>`
   }
 `;
 
-export const BoxSkills = styled.div<Skill>`
-  display: flex;
-  width: 80vw;
-  justify-content: ${(props) =>
-    props.withoutJustify ? "none" : "space-between"};
-  margin: 0 5vw 2vw 5vw;
-`;
-
 export const Experiences = styled.div<Content>`
   padding-top: ${(props) => (props.visible ? "30px" : "30px")};
   background-color: rgba(255, 170, 0);
